@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import EGNavbar from "./EGNavbar";
+import EGNavbar from "./components/EGNavbar";
 
 const Home = () => <p>Home</p>;
 const Gallery = () => <p>Gallery</p>;
