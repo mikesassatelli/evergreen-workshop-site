@@ -1,10 +1,10 @@
 import { Component } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-export default class EGNavbar extends Component {
+export default class Navigation extends Component {
     render() {
         return <>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">
                         <img
@@ -23,7 +23,7 @@ export default class EGNavbar extends Component {
                             <Nav.Link href="/gallery">Gallery</Nav.Link>
                             <Nav.Link href="/contact">Contact</Nav.Link>
 
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <NavDropdown title="Other" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/">Link 1</NavDropdown.Item>
                                 <NavDropdown.Item href="/">Link 2</NavDropdown.Item>
                                 <NavDropdown.Item href="/">Link 3</NavDropdown.Item>

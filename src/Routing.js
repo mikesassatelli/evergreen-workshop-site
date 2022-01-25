@@ -1,18 +1,21 @@
 import { Routes, Route } from "react-router-dom";
-import EGNavbar from "./components/EGNavbar";
-
-const Home = () => <p>Home</p>;
-const Gallery = () => <p>Gallery</p>;
-const Contact = () => <p>Contact</p>;
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
+import Home from "./pages/Home";
 
 function Routing() {
     return <>
-        <EGNavbar/>
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="main">
+            <Navigation />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+        </div>
     </>
 }
 
